@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
+
+body{
+    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+}
+
+header{
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
+    width: 100%;
+    font-family: Raleway;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.nomePrincipal{
+    font-family: Impact;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: -5px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.slogan{
+    background-image: linear-gradient(to top, #0b8852 0%, #359b7b 100%);
+    color: rgb(235, 233, 233);
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#section{
+    text-align: center;
+}
+
+.card{
+    text-align: center;
+    background: #C9CCD3;
+    background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: lighten;
+    border-color: rgb(175, 175, 175);
+}
+
+.card-largura{
+    max-width: 18rem;
+}
+
+.slider {
+    -webkit-appearance: none;
+}
+  
+.slider::-webkit-slider-thumb {
+    background:rgb(102, 112, 102);
+    cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+    background:rgb(102, 112, 102);
+    cursor: pointer;
+}
+
+
+
+.limpar{
+    margin-right: 15px;
+    background: rgb(102, 112, 102);
+    text-decoration: none;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    font: inherit;
+    font-size: 12px;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 1.5em;
+    padding: 1em 2em;
+    text-align: center;
+    border-radius: 0.5em;
+    box-shadow: 2.5px 2.5px 0 1px rgba(0, 0, 0, 0.733);
+  
+    transition: box-shadow 0.3s ease; transition: 03.s;
+}
+
+.limpar:active {
+    box-shadow: 0 0 0 0  rgba(0, 0, 0, 0.733), inset 2px 2px 0 1px rgba(0, 0, 0, 0.63);
+    transform: translate(2px, 2px);
+}
+
+footer{
+    background-image: linear-gradient(to top, #0b8852 0%, #359b7b 100%);
+    font-family: Raleway;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logo{
+    height: 25px;
+    width: 35px;
+}
