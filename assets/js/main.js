@@ -4,6 +4,10 @@ function carregar(){
         this.value = parseFloat(this.value).toFixed(2);
      });
     }
+    document.getElementById("salMes").addEventListener("change", calculaX , false);
+    document.getElementById("horaTrab").addEventListener("change", calculaX , false);
+    document.getElementById("diaSemana").addEventListener("change", calculaX , false);
+    document.getElementById("semanaMes").addEventListener("change", calculaX , false);
 }
  
 
@@ -20,7 +24,7 @@ function mostrarResultado(val) {
 
 
     
-calculaX = function (){
+var calculaX = function (){
     var salarioMes = parseFloat(document.getElementById('salMes').value);
     var horaTrab = parseFloat(document.getElementById('horaTrab').value); 
     var diaSemana = parseFloat(document.getElementById('diaSemana').value);
@@ -30,3 +34,4 @@ calculaX = function (){
    document.getElementById('semanaMesVal').value = semanaMes;
    
 }
+
