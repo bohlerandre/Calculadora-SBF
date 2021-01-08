@@ -1,13 +1,13 @@
 
 
 function mostrarResultado(val) {
-    document.getElementById('horaTrabVal').value=val; 
+    document.getElementById('horaTrabVal').innerHTML=val; 
   }
   function mostrarResultado1(val) {
-    document.getElementById('diaSemanaVal').value=val; 
+    document.getElementById('diaSemanaVal').innerHTML=val; 
   }
   function mostrarResultado2(val) {
-    document.getElementById('semanaMesVal').value=val; 
+    document.getElementById('semanaMesVal').innerHTML =val; 
   }
 
 
