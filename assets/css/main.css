@@ -43,9 +43,14 @@ header{
 }
 
 .card-largura{
-    max-width: 20rem;
+    max-width: 100%;
 }
+@media (min-width: 800px) {
 
+    .card-largura{
+        max-width: 18rem;
+    }
+}
 
 
 
