@@ -4,10 +4,17 @@ function carregar(){
         this.value = parseFloat(this.value).toFixed(2);
      });
     }
+    if(document.getElementById('custoFixoMes')){
+      document.getElementById('custoFixoMes').addEventListener("change", function(){
+        this.value = parseFloat(this.value).toFixed(2);
+      })
+
+    }
     document.getElementById("salMes").addEventListener("change", calculaX , false);
     document.getElementById("horaTrab").addEventListener("change", calculaX , false);
     document.getElementById("diaSemana").addEventListener("change", calculaX , false);
     document.getElementById("semanaMes").addEventListener("change", calculaX , false);
+    document.getElementById('custoFixoMes').addEventListener("change", calculaX, false);
 }
  
 
@@ -30,8 +37,12 @@ var calculaX = function (){
     var diaSemana = parseFloat(document.getElementById('diaSemana').value);
     var semanaMes = parseFloat(document.getElementById('semanaMes').value);
     var custoHora = (salarioMes/((horaTrab*diaSemana)*semanaMes)).toFixed(2);
+    var custoFixoMes = parseFloat(document.getElementById('custoFixoMes').value);
    document.getElementById('custoHora').value = custoHora;
    document.getElementById('semanaMesVal').value = semanaMes;
+   var custoFixoHoraMes = (custoFixoMes/custoHora).toFixed(2);
+   document.getElementById('custoFixoHora').value =  custoFixoHoraMes;
    
 }
+
 
