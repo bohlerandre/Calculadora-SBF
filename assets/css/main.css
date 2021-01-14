@@ -42,20 +42,6 @@ header{
     border-color: rgb(175, 175, 175);
 }
 
-.card-largura{
-    max-width: 100%;
-}
-@media (min-width: 800px) {
-
-    .card-largura{
-        max-width: 18rem;
-    }
-}
-
-
-
-
-
 .slider {
     -webkit-appearance: none;
 }
